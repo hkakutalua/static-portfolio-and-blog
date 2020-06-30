@@ -1,0 +1,402 @@
+/**
+    Primary color: #B07030
+    Primary dark: #7D4F22
+**/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Lato', 'Arial', 'sans-serif';
+    font-size: 20px;
+    font-weight: 300;
+    background: #ffffff;
+    color: #1b1b1b;
+    text-rendering: optimizeLegibility;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.col {
+    margin: 0;
+}
+
+
+/* ----------------------------------------- */
+/* HEADINGS */
+/* ----------------------------------------- */
+h1 {
+    font-size: 200%;
+    font-weight: 300;
+    color: #dbdbdb;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-size: 150%;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* ----------------------------------------- */
+/* SECTIONS */
+/* ----------------------------------------- */
+
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+section h1 {
+    font-size: 180%;
+    color: #414040;
+    margin-bottom: 40px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+/* ----------------------------------------- */
+/* PARAGRAPHS */
+/* ----------------------------------------- */
+p {
+    color: #cecece;
+    line-height: 25px;
+    text-align: justify;
+}
+
+section p {
+    color: #424242;
+    margin-bottom: 10px;
+}
+
+section p:last-child {
+    margin-bottom: 0;
+}
+
+/* ----------------------------------------- */
+/* BUTTONS */
+/* ----------------------------------------- */
+.btn,
+.btn:link,
+.btn:visited {
+    text-transform: none;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 200px;
+    border: none;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.btn-primary {
+    background-color: #B07030;
+}
+
+.btn-primary:hover {
+    background-color: #7D4F22;
+}
+
+/* ----------------------------------------- */
+/* HEADER */
+/* ----------------------------------------- */
+header {
+    background-image: linear-gradient(#0000009f, #0000009f), url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.main-nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    color: #fff;
+}
+
+.main-nav li:last-of-type a {
+    margin-left: 20px;
+    color: #B07030;
+}
+
+.main-nav li a:hover {
+    color: #B07030;
+}
+
+.main-nav li:last-of-type a:hover {
+    margin-left: 20px;
+    color: #7D4F22;
+}
+
+.hero-introduction-box {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-introduction-box p {
+    margin-bottom: 15px;
+}
+
+.social-media-links {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.social-media-links li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.social-media-links li:last-of-type {
+    margin-right: 0;
+}
+
+.social-media-links li a {
+    font-size: 200%;
+    color: #e4e4e4;
+}
+
+.fa-github:hover {
+    color: #000000;
+}
+
+.fa-medium:hover {
+    color: #02b875
+}
+
+.fa-linkedin:hover {
+    color: #007bb5;   
+}
+
+.fa-twitter:hover {
+    color: #1da1f2;
+}
+
+/*
+
+/* ----------------------------------------- */
+/* SKILLSET AND LATEST BLOG POSTS */
+/* ----------------------------------------- */
+.skillset-section {
+    padding-left: 0;
+    padding-right: 100px;
+    background-color: #fff;
+}
+
+.skillset-section h2 {
+    margin-bottom: 10px;
+}
+
+.skillset-section ul {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.skillset-section ul:last-of-type {
+    margin-bottom: 0;
+}
+
+.skillset-item {
+    background-color: transparent;
+    padding: 10px;
+    border: 2.5px solid #B07030;
+    border-radius: 20px;
+    margin-bottom: 7px;
+    display: inline-block;
+    color: #424242;
+}
+
+.blog-section {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.blog-section article {
+    margin-bottom: 40px;
+}
+
+.blog-section article:last-of-type {
+    margin-bottom: 0;
+}
+
+.blog-section article h2 {
+    margin: 0;
+}
+
+.blog-section article h2 a:link,
+.blog-section article h2 a:visited {
+    text-decoration: none;
+    color: #7D4F22;
+}
+
+.blog-section article h2 a:hover {
+    color: #523518;
+}
+
+.blog-section article time {
+    font-size: 75%;
+}
+
+.blog-section article time span {
+    font-weight: bold;
+}
+
+.blog-section article p {
+    margin: 15px 0;
+}
+
+/* ----------------------------------------- */
+/* PROJECTS */
+/* ----------------------------------------- */
+.delivered-projects-section {
+    background-color: #f0f0f0;
+}
+
+.project-item {
+    margin-bottom: 50px;
+}
+
+.project-item:last-of-type {
+    margin-bottom: 0;
+}
+
+.project-links {
+    list-style: none;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.project-links li {
+    display: inline-block;
+    margin-right: 15px;
+    height: 40px;
+} 
+
+.project-links li img {
+    height: 100%;
+    width: auto;
+    vertical-align: middle;
+}
+
+.project-links li .fa-globe {
+    font-size: 185%;
+    color: #1da1f2;
+    vertical-align: middle;
+}
+
+.project-features {
+    margin-bottom: 20px;
+}
+
+.project-features .feature-title {
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.project-features ul {
+    list-style: none;
+}
+
+.project-features li {
+    background-color: transparent;
+    padding: 10px;
+    border: 2.5px solid #B07030;
+    border-radius: 20px;
+    display: inline-block;
+    color: #424242;
+    margin-right: 8px;
+    margin-bottom: 4px;
+}
+
+/* ----------------------------------------- */
+/* GET IN TOUCH */
+/* ----------------------------------------- */
+.get-in-touch-section p:last-of-type {
+    margin-bottom: 25px;
+}
+
+.get-in-touch-section {
+    background-color: #fff;
+}
+
+.contact-form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact-form .row {
+    margin-bottom: 15px;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    padding: 4px 2px;
+    width: 100%;
+    border-radius: 3px;
+    border: 2px solid #dddddd
+}
+
+input[type=submit] {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* ----------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------- */
+footer {
+    background-color: #333333;
+    padding: 60px 0;
+}
+
+footer p {
+    color: #bebebe;
+    font-size: 90%;
+}
+
+footer .social-media-links {
+    text-align: right;
+    margin-bottom: 0;
+}
+
+footer .social-media-links a {
+    font-size: 120%;
+}
