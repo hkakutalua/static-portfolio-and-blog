@@ -157,10 +157,17 @@ footer .social-media-links a {
 
 .nav-container h2 {
     font-size: 140%;
-    font-weight: 700;
+    font-weight: 400;
     color: #424242;
     display: inline-block;
     margin: 0 0;
+    text-transform: uppercase;
+}
+
+.nav-container h2 a:link,
+.nav-container h2 a:visited {
+    text-decoration: none;
+    color: #252525;
 }
 
 .nav-container ul {
@@ -174,8 +181,15 @@ footer .social-media-links a {
     margin-right: 30px;
 }
 
-.nav-container ul li a {
+.nav-container ul li a:link,
+.nav-container ul li a:visited {
     text-decoration: none;
     color: #424242;
     font-weight: 400;
+    text-transform: uppercase;
+    font-size: 90%;
+}
+
+.nav-container ul li a:hover {
+    color: #B07030;
 }
