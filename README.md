@@ -20,7 +20,9 @@ Open **index.html** and enjoy it (yummy!!)
 
 ### Todo
 
-- [ ] Main Page
-- [ ] Blog Posts List Page
+- [x] Main Page
+- [x] Blog Posts List Page
 - [ ] Blog Post Page 
-
+- [ ] Responsive Main Page
+- [ ] Responsive Posts List Page
+- [ ] Responsive Post Page
