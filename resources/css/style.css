@@ -63,9 +63,6 @@ p {
     color: #424242;
     line-height: 25px;
     text-align: justify;
-}
-
-section p {
     margin-bottom: 10px;
 }
 
@@ -192,4 +189,13 @@ footer .social-media-links a {
 
 .nav-container ul li a:hover {
     color: #B07030;
+}
+
+.nav-container .blog-nav-item:link,
+.nav-container .blog-nav-item:visited {
+    color: #B07030;
+}
+
+.nav-container .blog-nav-item:hover {
+    color: #7D4F22;
 }
