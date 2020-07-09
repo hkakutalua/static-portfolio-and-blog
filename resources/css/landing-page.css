@@ -345,7 +345,7 @@ textarea {
     /* HEADER */
     /* ----------------------------------------- */
     .main-nav li:not(:last-of-type) {
-        opacity: 0%;
+        display: none;
     }
 
     header h1 {
