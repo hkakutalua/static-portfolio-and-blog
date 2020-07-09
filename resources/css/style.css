@@ -118,7 +118,7 @@ section p:last-child {
 /* ----------------------------------------- */
 footer {
     background-color: #333333;
-    padding: 60px 0;
+    padding: 30px 0;
 }
 
 footer p {
@@ -198,4 +198,26 @@ footer .social-media-links a {
 
 .nav-container .blog-nav-item:hover {
     color: #7D4F22;
+}
+
+@media only screen and (max-width: 767px) {
+    /* ----------------------------------------- */
+    /* FOOTER */
+    /* ----------------------------------------- */
+    footer .social-media-links a {
+        font-size: 120%;
+    }
+
+    footer .row .col {
+        width: 100%;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+    footer .social-media-links {
+        text-align: center;
+        margin-bottom: 0;
+    }
 }

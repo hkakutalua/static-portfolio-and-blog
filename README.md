@@ -23,6 +23,6 @@ Open **index.html** and enjoy it (yummy!!)
 - [x] Main Page
 - [x] Blog Posts List Page
 - [x] Blog Post Page 
-- [ ] Responsive Main Page
+- [x] Responsive Main Page
 - [ ] Responsive Posts List Page
 - [ ] Responsive Post Page

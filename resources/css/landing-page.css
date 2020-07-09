@@ -1,42 +1,4 @@
 /* ----------------------------------------- */
-/* HEADINGS */
-/* ----------------------------------------- */
-h1 {
-    font-size: 200%;
-    font-weight: 300;
-    color: #dbdbdb;
-    text-transform: uppercase;
-    margin: 0;
-}
-
-h2 {
-    font-size: 150%;
-    font-weight: 300;
-    margin: 0;
-}
-
-/* ----------------------------------------- */
-/* SECTIONS */
-/* ----------------------------------------- */
-
-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 25%;
-    padding-right: 25%;
-}
-
-section h1 {
-    font-size: 180%;
-    color: #414040;
-    margin-bottom: 40px;
-}
-
-section h2 {
-    margin-bottom: 20px;
-}
-
-/* ----------------------------------------- */
 /* HEADER */
 /* ----------------------------------------- */
 header {
@@ -44,6 +6,20 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
+}
+
+header h1 {
+    font-size: 200%;
+    font-weight: 300;
+    color: #dbdbdb;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+header h2 {
+    font-size: 150%;
+    font-weight: 300;
+    margin: 0;
 }
 
 header p {
@@ -118,11 +94,32 @@ header h1 {
 }
 
 /* ----------------------------------------- */
+/* SECTIONS */
+/* ----------------------------------------- */
+
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+section h1 {
+    font-size: 180%;
+    color: #414040;
+    margin-bottom: 40px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+/* ----------------------------------------- */
 /* SKILLSET AND LATEST BLOG POSTS */
 /* ----------------------------------------- */
 .skillset-section {
-    padding-left: 0;
-    padding-right: 100px;
+    padding-left: 45px;
+    padding-right: 45px;
     background-color: #fff;
 }
 
@@ -150,8 +147,8 @@ header h1 {
 }
 
 .blog-section {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 45px;
+    padding-right: 45px;
 }
 
 .blog-section article {
@@ -290,4 +287,115 @@ input[type=submit] {
 
 textarea {
     height: 100px;
+}
+
+/* ----------------------------------------- */
+/* MEDIA QUERIES */
+/* ----------------------------------------- */
+
+/* Big tablets to 1200px */
+@media only screen and (max-width: 1200px) {
+    /* ----------------------------------------- */
+    /* SECTIONS */
+    /* ----------------------------------------- */
+    section {
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+}
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+    .row { 
+        max-width: 100%;
+        margin: 0 30px;
+    }
+
+    /* ----------------------------------------- */
+    /* HEADER */
+    /* ----------------------------------------- */
+    .main-nav { margin-right: 30px; }
+
+    header h1 {
+        font-size: 130%;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+
+    /* ----------------------------------------- */
+    /* SECTIONS */
+    /* ----------------------------------------- */
+    section {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+    .row {
+        margin: 0;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    /* ----------------------------------------- */
+    /* HEADER */
+    /* ----------------------------------------- */
+    .main-nav li:not(:last-of-type) {
+        opacity: 0%;
+    }
+
+    header h1 {
+        font-size: 120%;
+        font-weight: 400;
+        margin-bottom: 25px;
+    }
+
+    .hero-introduction-box {
+        width: 70%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .hero-introduction-box p {
+        margin-bottom: 25px;
+    }
+
+    /* ----------------------------------------- */
+    /* SECTIONS */
+    /* ----------------------------------------- */
+    section {
+        padding: 20px 45px;
+    }
+
+    section h1 {
+        font-size: 120%;
+        color: #414040;
+        margin-bottom: 40px;
+    }
+    
+    section h2 {
+        font-weight: 400;
+        font-size: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* ----------------------------------------- */
+    /* SKILLSET AND LATEST BLOG POSTS */
+    /* ----------------------------------------- */
+    .skillset-section {
+        background-color: #f0f0f0;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .blog-section {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
 }
