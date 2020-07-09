@@ -1,96 +1,129 @@
 /* ----------------------------------------- */
 /* HEADER */
 /* ----------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-4-grid@3.4.0/css/grid.min.css');
+
+html,
+body {
+  height: 100%;
+  line-height: 1.2;
+}
+
+body {
+  position: relative;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.w-100 {
+  max-width: 100%;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.nav>.container {
+  display: flex;
+  justify-content: end;
+}
+
+.nav-list {
+  margin-right: -10px;
+}
+
+.nav-list-item {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list-item-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #868686;
+  padding: 10px;
+  font-weight: 500;
+}
+
+.nav-list-item-link:hover {
+  color: #4a4a4a;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.hero-paragraph {
+  color: #717171;
+  line-height: 1.5;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-cta {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #DB6C00;
+  padding: 15px;
+  border-radius: 50px;
+  font-weight: 500;
+  color: white;
+}
+
+.hero-image {
+  border-radius: 15px;
+}
+
+.hero-social-links {
+  margin-bottom: 2rem;
+}
+
+.hero-social-link-item {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-social-link-item-icon {
+  font-size: 2rem;
+  margin: 0 5px;
+  color: #868686;
+}
+
 header {
-    background-image: linear-gradient(#0000009f, #0000009f), url(img/hero.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
-
-header h1 {
-    font-size: 200%;
-    font-weight: 300;
-    color: #dbdbdb;
-    text-transform: uppercase;
-    margin: 0;
-}
-
-header h2 {
-    font-size: 150%;
-    font-weight: 300;
-    margin: 0;
-}
-
-header p {
-    color: #cecece;
-    line-height: 25px;
-    text-align: justify;
-}
-
-header h1 {
-    margin-bottom: 10px;
-}
-
-.main-nav {
-    float: right;
-    list-style: none;
-    margin-top: 30px;
-}
-
-.main-nav li {
-    display: inline;
-    margin-right: 10px;
-}
-
-.main-nav li a:link,
-.main-nav li a:visited {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 90%;
-    color: #fff;
-}
-
-.main-nav li:last-of-type a {
-    margin-left: 20px;
-    color: #B07030;
-}
-
-.main-nav li a:hover {
-    color: #B07030;
-}
-
-.main-nav li:last-of-type a:hover {
-    margin-left: 20px;
-    color: #7D4F22;
-}
-
-.hero-introduction-box {
-    width: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.hero-introduction-box p {
-    margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .fa-github:hover {
-    color: #000000;
+  color: #000000;
 }
 
 .fa-medium:hover {
-    color: #02b875
+  color: #02b875
 }
 
 .fa-linkedin:hover {
-    color: #007bb5;   
+  color: #007bb5;
 }
 
 .fa-twitter:hover {
-    color: #1da1f2;
+  color: #1da1f2;
 }
 
 /* ----------------------------------------- */
@@ -98,195 +131,195 @@ header h1 {
 /* ----------------------------------------- */
 
 section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 20%;
-    padding-right: 20%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 section h1 {
-    font-size: 180%;
-    color: #414040;
-    margin-bottom: 40px;
+  font-size: 180%;
+  color: #414040;
+  margin-bottom: 40px;
 }
 
 section h2 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 /* ----------------------------------------- */
 /* SKILLSET AND LATEST BLOG POSTS */
 /* ----------------------------------------- */
 .skillset-section {
-    padding-left: 45px;
-    padding-right: 45px;
-    background-color: #fff;
+  padding-left: 45px;
+  padding-right: 45px;
+  background-color: #fff;
 }
 
 .skillset-section h2 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .skillset-section ul {
-    list-style-type: none;
-    margin-bottom: 10px;
+  list-style-type: none;
+  margin-bottom: 10px;
 }
 
 .skillset-section ul:last-of-type {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .skillset-item {
-    background-color: transparent;
-    padding: 10px;
-    border: 2.5px solid #B07030;
-    border-radius: 20px;
-    margin-bottom: 7px;
-    display: inline-block;
-    color: #424242;
+  background-color: transparent;
+  padding: 10px;
+  border: 2.5px solid #B07030;
+  border-radius: 20px;
+  margin-bottom: 7px;
+  display: inline-block;
+  color: #424242;
 }
 
 .blog-section {
-    padding-left: 45px;
-    padding-right: 45px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
 .blog-section article {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .blog-section article:last-of-type {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .blog-section article h2 {
-    margin: 0;
+  margin: 0;
 }
 
 .blog-section article h2 a:link,
 .blog-section article h2 a:visited {
-    text-decoration: none;
-    color: #7D4F22;
+  text-decoration: none;
+  color: #7D4F22;
 }
 
 .blog-section article h2 a:hover {
-    color: #523518;
+  color: #523518;
 }
 
 .blog-section article time {
-    font-size: 75%;
+  font-size: 75%;
 }
 
 .blog-section article time span {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .blog-section article p {
-    margin: 15px 0;
+  margin: 15px 0;
 }
 
 /* ----------------------------------------- */
 /* PROJECTS */
 /* ----------------------------------------- */
 .delivered-projects-section {
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
 .project-item {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .project-item:last-of-type {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .project-links {
-    list-style: none;
-    margin-top: 25px;
-    margin-bottom: 25px;
+  list-style: none;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .project-links li {
-    display: inline-block;
-    margin-right: 15px;
-    height: 40px;
-} 
+  display: inline-block;
+  margin-right: 15px;
+  height: 40px;
+}
 
 .project-links li img {
-    height: 100%;
-    width: auto;
-    vertical-align: middle;
+  height: 100%;
+  width: auto;
+  vertical-align: middle;
 }
 
 .project-links li .fa-globe {
-    font-size: 185%;
-    color: #1da1f2;
-    vertical-align: middle;
+  font-size: 185%;
+  color: #1da1f2;
+  vertical-align: middle;
 }
 
 .project-features {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .project-features .feature-title {
-    margin-right: 20px;
-    text-transform: uppercase;
-    font-weight: 400;
-    height: 100%;
-    margin-bottom: 10px;
+  margin-right: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  height: 100%;
+  margin-bottom: 10px;
 }
 
 .project-features ul {
-    list-style: none;
+  list-style: none;
 }
 
 .project-features li {
-    background-color: transparent;
-    padding: 10px;
-    border: 2.5px solid #B07030;
-    border-radius: 20px;
-    display: inline-block;
-    color: #424242;
-    margin-right: 8px;
-    margin-bottom: 4px;
+  background-color: transparent;
+  padding: 10px;
+  border: 2.5px solid #B07030;
+  border-radius: 20px;
+  display: inline-block;
+  color: #424242;
+  margin-right: 8px;
+  margin-bottom: 4px;
 }
 
 /* ----------------------------------------- */
 /* GET IN TOUCH */
 /* ----------------------------------------- */
 .get-in-touch-section p:last-of-type {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .get-in-touch-section {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .contact-form {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .contact-form .row {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 input[type=text],
 input[type=email],
 textarea {
-    padding: 4px 2px;
-    width: 100%;
-    border-radius: 3px;
-    border: 2px solid #dddddd
+  padding: 4px 2px;
+  width: 100%;
+  border-radius: 3px;
+  border: 2px solid #dddddd
 }
 
 input[type=submit] {
-    padding-left: 30px;
-    padding-right: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 textarea {
-    height: 100px;
+  height: 100px;
 }
 
 /* ----------------------------------------- */
@@ -295,107 +328,104 @@ textarea {
 
 /* Big tablets to 1200px */
 @media only screen and (max-width: 1200px) {
-    /* ----------------------------------------- */
-    /* SECTIONS */
-    /* ----------------------------------------- */
-    section {
-        padding-left: 250px;
-        padding-right: 250px;
-    }
+
+  /* ----------------------------------------- */
+  /* SECTIONS */
+  /* ----------------------------------------- */
+  section {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
 }
 
 /* Small tablet to big tablet: from 768px to 1023px */
 @media only screen and (max-width: 1023px) {
-    .row { 
-        max-width: 100%;
-        margin: 0 30px;
-    }
+  .row {
+    max-width: 100%;
+    margin: 0 30px;
+  }
 
-    /* ----------------------------------------- */
-    /* HEADER */
-    /* ----------------------------------------- */
-    .main-nav { margin-right: 30px; }
+  /* ----------------------------------------- */
+  /* HEADER */
+  /* ----------------------------------------- */
+  .main-nav {
+    margin-right: 30px;
+  }
 
-    header h1 {
-        font-size: 130%;
-        font-weight: 400;
-        margin-bottom: 15px;
-    }
-
-    /* ----------------------------------------- */
-    /* SECTIONS */
-    /* ----------------------------------------- */
-    section {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
+  /* ----------------------------------------- */
+  /* SECTIONS */
+  /* ----------------------------------------- */
+  section {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 /* Small phones to small tablets: from 481px to 767px */
 @media only screen and (max-width: 767px) {
-    .row {
-        margin: 0;
-    }
+  .row {
+    margin: 0;
+  }
 
-    .col {
-        width: 100%;
-    }
+  .col {
+    width: 100%;
+  }
 
-    /* ----------------------------------------- */
-    /* HEADER */
-    /* ----------------------------------------- */
-    .main-nav li:not(:last-of-type) {
-        display: none;
-    }
+  /* ----------------------------------------- */
+  /* HEADER */
+  /* ----------------------------------------- */
+  .main-nav li:not(:last-of-type) {
+    display: none;
+  }
 
-    header h1 {
-        font-size: 120%;
-        font-weight: 400;
-        margin-bottom: 25px;
-    }
+  header h1 {
+    font-size: 120%;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
 
-    .hero-introduction-box {
-        width: 70%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+  .hero-introduction-box {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-    .hero-introduction-box p {
-        margin-bottom: 25px;
-    }
+  .hero-introduction-box p {
+    margin-bottom: 25px;
+  }
 
-    /* ----------------------------------------- */
-    /* SECTIONS */
-    /* ----------------------------------------- */
-    section {
-        padding: 20px 45px;
-    }
+  /* ----------------------------------------- */
+  /* SECTIONS */
+  /* ----------------------------------------- */
+  section {
+    padding: 20px 45px;
+  }
 
-    section h1 {
-        font-size: 120%;
-        color: #414040;
-        margin-bottom: 40px;
-    }
-    
-    section h2 {
-        font-weight: 400;
-        font-size: 100%;
-        margin-bottom: 20px;
-    }
+  section h1 {
+    font-size: 120%;
+    color: #414040;
+    margin-bottom: 40px;
+  }
 
-    /* ----------------------------------------- */
-    /* SKILLSET AND LATEST BLOG POSTS */
-    /* ----------------------------------------- */
-    .skillset-section {
-        background-color: #f0f0f0;
-        padding-left: 45px;
-        padding-right: 45px;
-    }
+  section h2 {
+    font-weight: 400;
+    font-size: 100%;
+    margin-bottom: 20px;
+  }
 
-    .blog-section {
-        padding-left: 45px;
-        padding-right: 45px;
-    }
+  /* ----------------------------------------- */
+  /* SKILLSET AND LATEST BLOG POSTS */
+  /* ----------------------------------------- */
+  .skillset-section {
+    background-color: #f0f0f0;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .blog-section {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
 }

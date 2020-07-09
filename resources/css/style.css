@@ -10,8 +10,7 @@
 }
 
 html, body {
-    font-family: 'Lato', 'Arial', 'sans-serif';
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
     background: #ffffff;
     color: #1b1b1b;
@@ -54,16 +53,6 @@ h3 {
 section {
     padding-top: 60px;
     padding-bottom: 60px;
-}
-
-/* ----------------------------------------- */
-/* PARAGRAPHS */
-/* ----------------------------------------- */
-p {
-    color: #424242;
-    line-height: 25px;
-    text-align: justify;
-    margin-bottom: 10px;
 }
 
 section p:last-child {
