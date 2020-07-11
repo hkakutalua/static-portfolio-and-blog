@@ -56,3 +56,33 @@ article p {
 .posts-page-navigator .btn:last-child {
     margin-left: 20px;
 }
+
+/* Big tablets to 1200px */
+@media only screen and (max-width: 1200px) {
+    section,
+    .posts-page-navigator {
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+}
+
+/* Small tablets to big tablets */
+@media only screen and (max-width: 1023px) {
+    section,
+    .posts-page-navigator {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+/* Small phones to small tablets tablets */
+@media only screen and (max-width: 767px) {
+    section,
+    .posts-page-navigator {
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+}
+
+/* Small phones */
+@media only screen and (max-width: 480px) {}
