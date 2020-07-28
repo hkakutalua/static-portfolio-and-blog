@@ -1,6 +1,6 @@
 article {
     padding: 10px 0;
-    margin: 0 400px;
+    margin: 0 25%;
     margin-bottom: 100px;
 }
 
@@ -23,3 +23,33 @@ article figure {
     text-align: center;
     margin-bottom: 10px;
 }
+
+/* Big tablets to 1200px */
+@media only screen and (max-width: 1200px) {
+    article {
+        margin: 0 250px;
+    }
+}
+
+/* Small tablets to big tablets */
+@media only screen and (max-width: 1023px) {
+    article {
+        margin: 0 20%;
+    }
+}
+
+/* Small phones to small tablets tablets */
+@media only screen and (max-width: 767px) {
+    article {
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+
+    article h1 {
+        font-size: 120%;
+        color: #414040;
+    }
+}
+
+/* Small phones */
+@media only screen and (max-width: 480px) {}
