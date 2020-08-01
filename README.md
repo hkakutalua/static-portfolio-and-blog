@@ -26,6 +26,6 @@ Open **index.html** and enjoy it (yummy!!)
 - [x] Responsive Main Page
 - [x] Responsive Posts List Page
 - [x] Responsive Post Page
-- [ ] Login Page
+- [x] Login Page
 - [ ] Blog Articles Management Page
 - [ ] New/Edit Article Page

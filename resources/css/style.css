@@ -114,6 +114,22 @@ section p:last-child {
 }
 
 /* ----------------------------------------- */
+/* INPUTS */
+/* ----------------------------------------- */
+.text-edit {
+    padding: 8px 10px;
+    width: 100%;
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+}
+
+.text-edit:hover,
+.text-edit:focus {
+    border: 2px solid #818181;
+    outline: none;
+}
+
+/* ----------------------------------------- */
 /* FOOTER */
 /* ----------------------------------------- */
 footer {

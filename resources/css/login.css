@@ -1,0 +1,37 @@
+.login-form {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #f3f3f3;
+    border: 2px solid #cfcfcf;
+}
+
+.login-form h1 {
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.login-form .row {
+    margin-bottom: 20px;
+}
+
+.login-form .row:last-of-type {
+    text-align: right;
+    margin-bottom: 0;
+}
+
+/* Small phones to small tablets */
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 120%;
+        font-weight: 400;
+        margin-bottom: 25px;
+    }
+
+    .login-form {
+        max-width: 300px;
+    }
+}
