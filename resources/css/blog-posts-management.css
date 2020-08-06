@@ -94,7 +94,17 @@
         color: #414040;
     }
 
+    .blog-posts-header .span-1-of-2 {
+        width: 50%;
+    }
+
     .blog-post-item .blog-post-item-actions .fas {
         margin-right: 0;
+    }
+    .blog-post-item .span-8-of-10 {
+        width: 60%;
+    }
+    .blog-post-item .span-2-of-10 {
+        width: 40%;
     }
 }
