@@ -27,5 +27,5 @@ Open **index.html** and enjoy it (yummy!!)
 - [x] Responsive Posts List Page
 - [x] Responsive Post Page
 - [x] Login Page
-- [ ] Blog Articles Management Page
+- [x] Blog Articles Management Page
 - [ ] New/Edit Article Page
