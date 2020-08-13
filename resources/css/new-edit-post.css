@@ -1,0 +1,46 @@
+.blog-post-form .row {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-post-form .post-title-row {
+    margin-bottom: 15px;
+}
+
+.blog-post-form .post-subtitle-row {
+    margin-bottom: 25px;
+}
+
+.blog-post-form .post-content-row {
+    margin-bottom: 15px;
+}
+
+.blog-post-form .post-btn-row {
+    text-align: right;
+    margin-bottom: 25px;
+}
+
+textarea {
+    height: 400px;
+    resize: none;
+}
+
+/* Small tablets to big tablets (768px to 1023px) */
+@media only screen and (max-width: 1023px) {
+    .blog-post-form .row {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+/* Small phones to small tablets (481px to 767px) */
+@media only screen and (max-width: 767px) {
+    .blog-post-form h1 {
+        font-size: 120%;
+    }
+
+    textarea {
+        height: 250px;
+    }
+}

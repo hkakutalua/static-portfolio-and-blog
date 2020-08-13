@@ -28,4 +28,4 @@ Open **index.html** and enjoy it (yummy!!)
 - [x] Responsive Post Page
 - [x] Login Page
 - [x] Blog Articles Management Page
-- [ ] New/Edit Article Page
+- [x] New/Edit Article Page
